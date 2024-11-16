@@ -1,0 +1,255 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #bac4cc;
+}
+
+/* Navbar Style */
+.navbar {
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f3f7;
+    padding: 5px;
+    z-index: 1000;
+    width: 97%;
+}
+
+.navbar h2 {
+    font-size: 30px;
+    white-space: break-spaces;
+    text-align: center;
+    margin: 0;
+}
+
+.navbar a {
+    color: #060709;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #060709;
+    color: #fff;
+    padding: 50px;
+}
+
+.header-content {
+    flex: 1;
+    color: #ffffff;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header img {
+    width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Slider Section */
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-images img {
+    min-width: 100%;
+    height: auto;
+
+}
+
+.slider-images img.display {
+    display: block; /* Show only the active image */
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    user-select: none;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Button Hover Effects */
+.prev:hover, .next:hover {
+    background-color: rgb(30, 28, 28);
+}
+
+/* About Sections */
+.about-section, .about-section2 {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:  4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.about-section img, .about-section2 img {
+    width: 300px;
+    height: 300px;
+}
+.about-section2 {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    padding: 50px;
+    flex: 2;
+}
+
+.text-content h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-content2 {
+    padding: 50px;
+    flex: 2;
+    order: 1; /* Ensures text content appears on the left */
+}
+.text-content p {
+    line-height: 1.6;
+    color: #555;
+}
+.text-content2 p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.text-content strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Buttons */
+.service-button, .contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #0a0d13;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-button:hover, .contact-button:hover {
+    background-color: #0a0d13;
+}
+
+.image-content {
+    flex: 3;
+    overflow: hidden;
+
+}
+
+/*Footer*/
+footer {
+    background-color: #000; /* Black background */
+    color: #faf2f2; /* White text for contrast */
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 3px solid #faf2f2; /* Gold top border for distinction */
+}
+
+footer p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    background: rgba(255, 255, 255, 0.1); /* Light overlay for contact items */
+    color: #faf2f2; /* Gold text */
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    flex: 1 1 180px; /* Responsive item sizes */
+}
+
+.contact-item strong {
+    color: #faf2f2; /* Emphasized strong text */
+}
+
+.contact-item a {
+    color: #bac4cc; /* Gold link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+    color: #fff; /* Change link color on hover */
+}
+
+.contact-item:hover {
+    background: rgb(64, 70, 89); /* Light gold background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.4); /* Increased shadow on hover */
+}
+
+
+
